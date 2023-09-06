@@ -59,13 +59,13 @@
 
 // Object.assign(ac2,ac1)// malumotni biriktirish tenglab qoyish bilan bir xil
 // console.log(ac2);
-const age= {
-    time:20,
-    age:{
-        time:5,
-        age:{
-            time:50
-        }
-    }
-}
-console.log(age?.age?.age?.time);
+// const age= {
+//     time:20,
+//     age:{
+//         time:5,
+//         age:{
+//             time:50
+//         }
+//     }
+// }
+// console.log(age?.age?.age?.time);
