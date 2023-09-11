@@ -31,4 +31,4 @@ do{
         console.log(obj.age)
     }else break;
     obj = obj.child;
-}while(1)
+}while(1) 
