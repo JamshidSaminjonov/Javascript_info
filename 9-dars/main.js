@@ -1,28 +1,30 @@
+//*******************web brain academy*********/
+
 // let str1 = 'webbrain';
 // let str2 =  new String('w')
 
 // console.log(str1 === 'webbr')
 // console.log(str2 === 'webbr')
 
-// console.log(str2.localeCompare(str1))// 1,0,-1 ==> 1 => 1chisini ichida ikkinchisi bulsa//0 => true degani bir xil bulsa//-1 => umuman yuq  false degani
+// console.log(str2.localeCompare(str1)); // 1,0,-1 ==> 1 => 1chisini ichida ikkinchisi bulsa//0 => true degani bir xil bulsa//-1 => umuman yuq  false degani
 
 // charga access qilish usullari/ belgiga kirish tarjima
-
-// console.log(str1[0])
-// console.log(str1[-1])
-// console.log(str1.charAt(2))
-// console.log(str1.at(-1))
+// let str1 = "web braim";
+// console.log(str1[0]);
+// console.log(str1[-5]);
+// console.log(str1.charAt(2));
+// console.log(str1.at(-1));
 
 //**********************string method */
 // 'webbrain';
+// console.log(`${str}`.length);
+// console.log(`${str}`.toUpperCase());
+// console.log(`${str}`.toLowerCase());//agar malumot string bulmasa deb strni string ichiga olgan
+// console.log(`${str}`.toLocaleUpperCase("ru")); //tillarga qarab
+// console.log(`${str}`.toLocaleUpperCase("eng")); //englizcha degani
 
-// console.log(str.length)
-// console.log(`${str}`.toUpperCase())
-// console.log(`${str}`.toLowerCase())
-// console.log(`${str}`.toLocaleLowerCase('tr'))//tillarga qarab
-// console.log(`${str}`.toLocaleUpperCase("eng-USA"))//englizcha degani
-
-// console.log(str.indexOf(' ',6))
+// let str = "salom";
+// console.log(str.indexOf("salo", 10));
 // console.log(str.lastIndexOf(' '))
 // console.log(str.includes(' '))//bor yuqligi
 // console.log(str.startsWith('998'))
@@ -48,7 +50,7 @@
 // console.log(str.replace(`${str.slice(0,1)}`,`${str1.toUpperCase()}`))
 // console.log(str.replace(/Web/ig, 'WEB'))
 // for(char of str){
-//     if(char !== ' '){   
+//     if(char !== ' '){
 //         console.log(char.toUpperCase())
 //     }
 // }
@@ -71,12 +73,49 @@
 //     console.log(sum)
 // }
 // changeUpperCase('salom qalesan jb jbjbj bjbjbv   ')
+//////////////***********home work */
+let str = "assalomu alaykum";
+let arr = str.split("");
+let arr2 = [];
+for (let item of arr) {
+  if (!arr2.includes(item)) arr2.push(item);
+}
+let str2 = arr2.join("");
+for (i = 0; i <= str2.length - 1; i++) {
+  //   console.log(str[i + 1]);
+  counter = 1;
+  for (j = 1; j <= str2.length - 1; j++) {
+    // console.log(str[i] == str[j + i] ? str[i] : "yuq");
+    if (str2[i] == str2[j + i]) {
+      // console.log(str.split("").splice(j + i - 1, 1));
+      counter++;
 
+      // console.log(str);
+      //   obj.str[i] = counter;
+    } else {
+      //   obj.str[i] = counter;
+    }
+  }
+  console.log(`${str[i]} ${counter}`);
+}
+console.log(str2);
 
+// (counter = 1), (obj = {});
+// // let str1 = "web";
+// for (i = 0; i <= str.length - 1; i++) {
+//   //   console.log(str[i + 1]);
+//   counter = 1;
+//   for (j = 1; j <= str.length - 1; j++) {
+//     // console.log(str[i] == str[j + i] ? str[i] : "yuq");
+//     if (str[i] == str[j + i]) {
+//       console.log(str.split("").splice(j + i - 1, 1));
+//       counter++;
 
-
-
-
-
-
-
+//       // console.log(str);
+//       //   obj.str[i] = counter;
+//     } else {
+//       //   obj.str[i] = counter;
+//     }
+//   }
+//   // console.log(`${str[i]} ${counter}`);
+// }
