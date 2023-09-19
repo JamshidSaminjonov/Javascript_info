@@ -43,5 +43,5 @@ let obj = [
 //     return a.name.localeCompare(b.name); //harflarni acci code tartibida chiqarish
 //   })
 // );
-
-console.log(obj.findIndex((value) => value.id == 6));
+let a = (b = 0);
+// console.log(obj.findIndex((value) => value.id == 6));
