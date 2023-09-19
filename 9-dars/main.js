@@ -74,41 +74,20 @@
 // }
 // changeUpperCase('salom qalesan jb jbjbj bjbjbv   ')
 //////////////***********home work */
-let str = "assalomu alaykum";
-let arr = str.split("");
-let arr2 = [];
-for (let item of arr) {
-  if (!arr2.includes(item)) arr2.push(item);
-}
-let str2 = arr2.join("");
-for (i = 0; i <= str2.length - 1; i++) {
-  //   console.log(str[i + 1]);
-  counter = 1;
-  for (j = 1; j <= str2.length - 1; j++) {
-    // console.log(str[i] == str[j + i] ? str[i] : "yuq");
-    if (str2[i] == str2[j + i]) {
-      // console.log(str.split("").splice(j + i - 1, 1));
-      counter++;
-
-      // console.log(str);
-      //   obj.str[i] = counter;
-    } else {
-      //   obj.str[i] = counter;
-    }
-  }
-  console.log(`${str[i]} ${counter}`);
-}
-console.log(str2);
-
-// (counter = 1), (obj = {});
-// // let str1 = "web";
-// for (i = 0; i <= str.length - 1; i++) {
+// let str = "assalomu alaykum";
+// let arr = str.split("");
+// let arr2 = [];
+// for (let item of arr) {
+//   if (!arr2.includes(item)) arr2.push(item);
+// }
+// let str2 = arr2.join("");
+// for (i = 0; i <= str2.length - 1; i++) {
 //   //   console.log(str[i + 1]);
 //   counter = 1;
-//   for (j = 1; j <= str.length - 1; j++) {
+//   for (j = 1; j <= str2.length - 1; j++) {
 //     // console.log(str[i] == str[j + i] ? str[i] : "yuq");
-//     if (str[i] == str[j + i]) {
-//       console.log(str.split("").splice(j + i - 1, 1));
+//     if (str2[i] == str2[j + i]) {
+//       // console.log(str.split("").splice(j + i - 1, 1));
 //       counter++;
 
 //       // console.log(str);
@@ -117,5 +96,26 @@ console.log(str2);
 //       //   obj.str[i] = counter;
 //     }
 //   }
-//   // console.log(`${str[i]} ${counter}`);
+//   console.log(`${str[i]} ${counter}`);
 // }
+// console.log(str2);
+
+// // (counter = 1), (obj = {});
+// // // let str1 = "web";
+// // for (i = 0; i <= str.length - 1; i++) {
+// //   //   console.log(str[i + 1]);
+// //   counter = 1;
+// //   for (j = 1; j <= str.length - 1; j++) {
+// //     // console.log(str[i] == str[j + i] ? str[i] : "yuq");
+// //     if (str[i] == str[j + i]) {
+// //       console.log(str.split("").splice(j + i - 1, 1));
+// //       counter++;
+
+// //       // console.log(str);
+// //       //   obj.str[i] = counter;
+// //     } else {
+// //       //   obj.str[i] = counter;
+// //     }
+// //   }
+// //   // console.log(`${str[i]} ${counter}`);
+// // }
