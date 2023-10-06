@@ -78,27 +78,32 @@ const moment = () => {
               data.Do[new Date().getDate() - 1]
             }${symbol}${new Date().getFullYear()},${new Date().getHours()}${symbol2}${new Date().getMinutes()}${symbol2}${addsecond} ${ampm}`
           );
+          break;
         case "dddd":
           console.log(data.dddd[new Date().getDay()]);
+          break;
         case "MMM Do YY":
           console.log(
             `${data.MMMM[new Date().getMonth()].slice(0, 3)}${symbol}${
               data.Do[new Date().getDate() - 1]
             }${symbol}${new Date().getFullYear() % 100}`
           );
+          break;
+        default:
+          console.log("unaqa code yuq, noturi yozding");
       }
     },
   };
 };
-moment().format("MMM Do YY");
-moment.locale(); // en
-moment().format("LT"); // 12:18 PM
-moment().format("LTS"); // 12:18:34 PM
-moment().format("L"); // 09/20/2023
-moment().format("l"); // 9/20/2023
-moment().format("LL"); // September 20, 2023
-moment().format("ll"); // Sep 20, 2023
-moment().format("LLL"); // September 20, 2023 12:18 PM
-moment().format("lll"); // Sep 20, 2023 12:18 PM
-moment().format("LLLL"); // Wednesday, September 20, 2023 12:18 PM
-moment().format("llll");
+moment().format("dddd");
+// moment.locale(); // en
+// moment().format("LT"); // 12:18 PM
+// moment().format("LTS"); // 12:18:34 PM
+// moment().format("L"); // 09/20/2023
+// moment().format("l"); // 9/20/2023
+// moment().format("LL"); // September 20, 2023
+// moment().format("ll"); // Sep 20, 2023
+// moment().format("LLL"); // September 20, 2023 12:18 PM
+// moment().format("lll"); // Sep 20, 2023 12:18 PM
+// moment().format("LLLL"); // Wednesday, September 20, 2023 12:18 PM
+// moment().format("llll");

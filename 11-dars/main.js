@@ -27,14 +27,14 @@
 // console.log(result);
 // filter arrayda
 
-let arr = ["salom", "alk", 45, true, 0, [], {}, null, undefined, ""];
-let num = [1, 23, 34, 35, 2, 34];
-let obj = [
-  { name: "shod", id: 1, title: "OBS" },
-  { name: "yhod", id: 2, title: "OBB" },
-  { name: "ohod", id: 6, title: "OBS" },
-  { name: "hod", id: 1, title: "OBB" },
-];
+// let arr = ["salom", "alk", 45, true, 0, [], {}, null, undefined, ""];
+// let num = [1, 23, 34, 35, 2, 34];
+// let obj = [
+//   { name: "shod", id: 1, title: "OBS" },
+//   { name: "yhod", id: 2, title: "OBB" },
+//   { name: "ohod", id: 6, title: "OBS" },
+//   { name: "hod", id: 1, title: "OBB" },
+// ];
 // console.log(obj.filter((value, index) => value.id == 2).name); //bu holatda false holat qaytarilmaydi//demak filtir object ichida filtratsiya qiladi va objectning elementlarini massiv ichida  qaytaradi
 // console.log(obj.filter((value, index) => value.id == 2).name); //findning vazifasi esa elementni topib ushani uzini gina qaytarish  farq : filtr = >massiv ,find= >element qayatardi
 // console.log(
@@ -43,5 +43,7 @@ let obj = [
 //     return a.name.localeCompare(b.name); //harflarni acci code tartibida chiqarish
 //   })
 // );
-let a = (b = 0);
+// let a = (b = 0);
+let name = "salomlar";
+console.log(Array.from(name, (v) => v.toUpperCase()).join(""));
 // console.log(obj.findIndex((value) => value.id == 6));
