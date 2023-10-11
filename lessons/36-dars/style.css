@@ -1,0 +1,41 @@
+.container {
+  width: 300px;
+  margin: 10px auto;
+}
+
+i {
+  cursor: pointer;
+}
+.login {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 70%;
+  background-color: transparent;
+}
+
+.loginBorder {
+  border: 1px solid #444;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: sans-serif;
+  transition: all 0.5 linear;
+}
+.loginHover {
+  border: 2px solid rgb(19, 147, 233);
+  /* color: rgb(19, 147, 233); */
+}
+.buttonHover {
+  background-color: rgb(19, 147, 233) !important;
+  color: #fff !important;
+}
+.scroll {
+  overflow: auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #555;
+  padding: 10px 15px;
+  /* white-space: n owrap; */
+}
