@@ -1,0 +1,19 @@
+.container {
+  width: 60%;
+  margin: 10px auto;
+  color: #918f8f;
+}
+.card {
+  /* border: 1px solid transparent; */
+  box-shadow: 2px 2px 10px 0px#918f8f;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  gap: 10px;
+}
+
+i {
+  cursor: pointer;
+}
