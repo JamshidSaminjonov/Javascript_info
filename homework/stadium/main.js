@@ -7,6 +7,4 @@ stadium.addEventListener("mousedown", (e) => {
   ball.style.cssText = `transform: translate(${
     e.pageX - stadium.offsetLeft - ball.clientWidth / 2
   }px,${e.pageY - stadium.offsetTop - ball.clientHeight / 2}px)`;
-
-  //   console.log("x:", e.offsetLeft, "y:", e.offsetTop);
 });
